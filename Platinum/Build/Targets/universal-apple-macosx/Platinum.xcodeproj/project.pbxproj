@@ -1286,6 +1286,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		86F2A39B1921AFD800B1AB7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E496A914146A4D320034BBAE;
+			remoteInfo = "Platinum-iPhone-Static";
+		};
 		E412ABB214478C240078A367 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -1299,13 +1306,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E48F89811632007E009E46A5;
 			remoteInfo = "Platinum-MacOSX-Static";
-		};
-		E42BD4CE176BD26A00134F8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E496A914146A4D320034BBAE;
-			remoteInfo = "Platinum-iPhone-Static";
 		};
 		E42D3B070FDC890F0045379C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -3612,7 +3612,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E42BD4CF176BD26A00134F8A /* PBXTargetDependency */,
+				86F2A39C1921AFD800B1AB7E /* PBXTargetDependency */,
 			);
 			name = "Platinum-iPhone-Framework";
 			productName = "PlatinumFramework-iPhoneFake";
@@ -4753,6 +4753,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		86F2A39C1921AFD800B1AB7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E496A914146A4D320034BBAE /* Platinum-iPhone-Static */;
+			targetProxy = 86F2A39B1921AFD800B1AB7E /* PBXContainerItemProxy */;
+		};
 		E412ABB314478C240078A367 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E4B95ECB1446575700DBBF49 /* Platinum-MacOSX-Framework */;
@@ -4762,11 +4767,6 @@
 			isa = PBXTargetDependency;
 			target = E48F89811632007E009E46A5 /* Platinum-MacOSX-Static */;
 			targetProxy = E423F35D18415DC500E24E39 /* PBXContainerItemProxy */;
-		};
-		E42BD4CF176BD26A00134F8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E496A914146A4D320034BBAE /* Platinum-iPhone-Static */;
-			targetProxy = E42BD4CE176BD26A00134F8A /* PBXContainerItemProxy */;
 		};
 		E42D3B080FDC890F0045379C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5610,7 +5610,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator*]" = i386;
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -5641,7 +5640,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator*]" = i386;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -5726,7 +5724,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator*]" = i386;
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				GCC_ENABLE_SYMBOL_SEPARATION = YES;
 				GCC_MODEL_TUNING = G5;
@@ -5745,7 +5742,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
-				"ARCHS[sdk=iphonesimulator*]" = i386;
 				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
 				GCC_ENABLE_SYMBOL_SEPARATION = YES;
 				GCC_MODEL_TUNING = G5;

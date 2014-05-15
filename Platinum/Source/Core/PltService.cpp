@@ -327,14 +327,14 @@ PLT_Service::SetSCPDXML(const char* scpd)
 
                 if (name.GetLength() == 0 || direction.GetLength() == 0 || relatedStateVar.GetLength() == 0) {
                     NPT_LOG_SEVERE_1("Invalid argument for action %s", (const char*)action_name);
-                    NPT_CHECK_LABEL_SEVERE(NPT_ERROR_INVALID_SYNTAX, failure);
+//                    NPT_CHECK_LABEL_SEVERE(NPT_ERROR_INVALID_SYNTAX, failure);
                 }
 
                 // make sure the related state variable exists
                 PLT_StateVariable* variable = FindStateVariable(relatedStateVar);
                 if (variable == NULL) {
                     NPT_LOG_SEVERE_1("State variable not found %s", (const char*)relatedStateVar);
-                    NPT_CHECK_LABEL_SEVERE(NPT_ERROR_INVALID_SYNTAX, failure);
+//                    NPT_CHECK_LABEL_SEVERE(NPT_ERROR_INVALID_SYNTAX, failure);
                 }
 
                 bool ret_value = false;

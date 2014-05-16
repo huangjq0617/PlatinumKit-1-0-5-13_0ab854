@@ -1869,7 +1869,7 @@ NPT_HttpClient::WriteRequest(NPT_OutputStream& output_stream,
         }
     } else {
         //FIXME: We should only set content length of 0 for methods with expected entities.
-        //headers.SetHeader(NPT_HTTP_HEADER_CONTENT_LENGTH, "0");
+        headers.SetHeader(NPT_HTTP_HEADER_CONTENT_LENGTH, "0");
     }
     
     // create a memory stream to buffer the headers

@@ -2803,7 +2803,7 @@ NPT_HttpFileRequestHandler_DefaultFileTypeMap[] = {
     {"xvid", "video/x-msvideo"},
     {"doc",  "application/msword"},
     {"js",   "application/javascript"},
-    {"m3u8", "application/x-mpegURL"},
+    {"m3u8", "video/x-mpegURL"},
     {"pdf",  "application/pdf"},
     {"ps",   "application/postscript"},
     {"eps",  "application/postscript"},

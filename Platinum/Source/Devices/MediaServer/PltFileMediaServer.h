@@ -64,6 +64,7 @@ public:
     // constructor & destructor
     PLT_FileMediaServerDelegate(const char* url_root, const char* file_root, bool use_cache = false);
     virtual ~PLT_FileMediaServerDelegate();
+    NPT_Result SetFileRoot(const char* file_root);
     
 protected:
     // PLT_MediaServerDelegate methods

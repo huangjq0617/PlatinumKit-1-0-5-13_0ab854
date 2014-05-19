@@ -70,6 +70,17 @@ PLT_FileMediaServerDelegate::~PLT_FileMediaServerDelegate()
 }
 
 /*----------------------------------------------------------------------
+ |   PLT_FileMediaServerDelegate::~PLT_FileMediaServerDelegate
+ +---------------------------------------------------------------------*/
+NPT_Result
+PLT_FileMediaServerDelegate::SetFileRoot(const char *file_root)
+{
+    m_FileRoot = file_root;
+    
+    return NPT_SUCCESS;
+}
+
+/*----------------------------------------------------------------------
 |   PLT_FileMediaServerDelegate::ProcessFileRequest
 +---------------------------------------------------------------------*/
 NPT_Result 

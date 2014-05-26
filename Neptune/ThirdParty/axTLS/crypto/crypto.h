@@ -39,13 +39,15 @@
 extern "C" {
 #endif
 
-#define MD5_Init    MD5_Init_NPT
-#define MD5_Update  MD5_Update_NPT
-#define MD5_Final   MD5_Final_NPT
-#define SHA1_Init   SHA1_Init_NPT
-#define SHA1_Update SHA1_Update_NPT
-#define SHA1_Final  SHA1_Final_NPT
-#define RSA_free    RSA_free_NPT
+#define MD5_Init            MD5_Init_NPT
+#define MD5_Update          MD5_Update_NPT
+#define MD5_Final           MD5_Final_NPT
+#define SHA1_Init           SHA1_Init_NPT
+#define SHA1_Update         SHA1_Update_NPT
+#define SHA1_Final          SHA1_Final_NPT
+#define RSA_free            RSA_free_NPT
+#define AES_cbc_encrypt     AES_cbc_encrypt_NPT
+#define AES_cbc_decrypt     AES_cbc_decrypt_NPT
     
 #include "config.h"
 #include "bigint_impl.h"

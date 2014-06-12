@@ -94,7 +94,7 @@ public:
      Verify the service has been properly initialized or is a valid discovered service.
      @return true if valid.
      */
-    bool IsValid() {  return (m_ActionDescs.GetItemCount() > 0); }
+    bool IsValid() {  return (m_ActionDescs.GetItemCount() > 0 || m_StateVars.GetItemCount() > 0); }
     
     /**
      When a PLT_DeviceHost needs to change more than one state variables at a time

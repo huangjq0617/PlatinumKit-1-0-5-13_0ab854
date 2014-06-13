@@ -63,6 +63,16 @@ PLT_MediaController::~PLT_MediaController()
 }
 
 /*----------------------------------------------------------------------
+ |   PLT_MediaController::RemoveAllDeivces
+ +---------------------------------------------------------------------*/
+void PLT_MediaController::RemoveAllDeivces()
+{
+    NPT_AutoLock lock(m_MediaRenderers);
+    
+    m_MediaRenderers.Clear();
+}
+
+/*----------------------------------------------------------------------
 |   PLT_MediaController::OnDeviceAdded
 +---------------------------------------------------------------------*/
 NPT_Result

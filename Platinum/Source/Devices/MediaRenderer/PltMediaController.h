@@ -246,6 +246,8 @@ public:
     virtual void SetDelegate(PLT_MediaControllerDelegate* delegate) {
         m_Delegate = delegate;
     }
+    
+    void RemoveAllDeivces();
 
     // PLT_CtrlPointListener methods
     virtual NPT_Result OnDeviceAdded(PLT_DeviceDataReference& device);

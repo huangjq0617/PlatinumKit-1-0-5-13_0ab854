@@ -334,6 +334,17 @@ PLT_CtrlPoint::Stop(PLT_SsdpListenTask* task)
 }
 
 /*----------------------------------------------------------------------
+ |   PLT_CtrlPoint::RemoveAllDeivces
+ +---------------------------------------------------------------------*/
+void
+PLT_CtrlPoint::RemoveAllDeivces()
+{
+    NPT_AutoLock lock(m_Lock);
+    
+    m_RootDevices.Clear();
+}
+
+/*----------------------------------------------------------------------
 |   PLT_CtrlPoint::AddListener
 +---------------------------------------------------------------------*/
 NPT_Result

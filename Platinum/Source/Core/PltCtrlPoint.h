@@ -103,6 +103,8 @@ public:
     // delegation
     virtual NPT_Result AddListener(PLT_CtrlPointListener* listener);
     virtual NPT_Result RemoveListener(PLT_CtrlPointListener* listener);
+    
+    void RemoveAllDeivces();
 
     // discovery
     virtual void IgnoreUUID(const char* uuid);

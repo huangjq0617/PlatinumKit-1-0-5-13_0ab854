@@ -219,7 +219,8 @@ public:
         NPT_FileInfo info1, info2;
         if (NPT_FAILED(NPT_File::GetInfo(NPT_FilePath::Create(m_Directory, file1), &info1))) return -1;
         if (NPT_FAILED(NPT_File::GetInfo(NPT_FilePath::Create(m_Directory, file2), &info2))) return -1;
-        return (info1.m_ModificationTime == info2.m_ModificationTime) ? 0 : (info1.m_ModificationTime < info2.m_ModificationTime ? -1 : 1);
+        return (info1.m_Type == info2.m_Type) ? ((info1.m_ModificationTime == info2.m_ModificationTime) ? 0 : (info1.m_ModificationTime < info2.m_ModificationTime ? -1 : 1)) :
+        (info1.m_Type == NPT_FileInfo::FILE_TYPE_DIRECTORY ? 1 : -1);
     }
     
 private:
